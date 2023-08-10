@@ -5,9 +5,9 @@
  * @description hi
 */
 
-@import url('https://raw.githubusercontent.com/shie100/dsc-css/main/theme/source.css');
-/*@import url('https://raw.githubusercontent.com/shie100/dsc-css/main/snip/small_sidebar.css');*/
-@import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
+@import url(https://shie100.github.io/theme/source.css);
+@import url(https://shie100.github.io/snip/small_sidebar.css);
+@import url(https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css);
 
 /* vars */
 :root {
