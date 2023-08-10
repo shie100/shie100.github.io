@@ -1,0 +1,22 @@
+/**
+ * @name a theme
+ * @author bitmoji
+ * @version 1
+ * @description hi
+*/
+
+@import url('https://raw.githubusercontent.com/shie100/dsc-css/main/theme/source.css');
+/*@import url('https://raw.githubusercontent.com/shie100/dsc-css/main/snip/small_sidebar.css');*/
+@import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
+
+/* vars */
+:root {
+    --accentcolor: 130, 104, 179;
+    --accentcolor2: 255, 173, 252;
+    --linkcolor: 130, 104, 179;
+    --mentioncolor: 130, 104, 179;
+    --settingsicons: 1;
+    --HSL-server-icon-size: 32px;
+    --HSL-server-spacing: 10px;
+    --HSL-server-direction: column;
+}
