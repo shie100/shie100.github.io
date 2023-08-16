@@ -278,6 +278,11 @@ svg.artwork-L5TAwQ {
     display: none !important
 }
 
+/* replace x with twitter in connections */
+img[src$="/assets/4643b9da67226d176c1c988a94b1f1ec.svg"] {
+    content: url("/assets/85cf2b49d2a185c98ec8e383ad5a05d6.svg");
+}
+
 /* better modals from dablulite */
 .footer-IubaaS {
     border-radius: 0 0 16px 16px;
