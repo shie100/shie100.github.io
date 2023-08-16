@@ -278,8 +278,8 @@ svg.artwork-L5TAwQ {
 }
 
 /* replace x with twitter in connections */
-img[src$="/assets/4643b9da67226d176c1c988a94b1f1ec.svg"] {
-    content: url("/assets/85cf2b49d2a185c98ec8e383ad5a05d6.svg");
+.connectedAccountIcon-3FdW8x[aria-label="X"] {
+    content: url("https://shie100.github.io/random-files/bird.svg");
 }
 
 /* better modals from dablulite */
