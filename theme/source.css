@@ -37,6 +37,7 @@
     width: var(--member-list-width);
     min-width: var(--member-list-width);
     transition: ease-in-out var(--member-list-transition);
+    z-index: 1;
 }
 
 .membersGroup-2eiWxl {
@@ -135,15 +136,6 @@ div[class*="lineClamp2Plus"] {
     display: none;
 }
 
-.vc-plugins-card {
-    background-color: var(--backgroundfloating) !important;
-}
-
-.vc-plugins-card:hover {
-    background-color: var(--backgroundaccent) !important;
-    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.18));
-}
-
 /* dashless channel names */
 @font-face {
     font-family: "Dashless";
@@ -174,6 +166,10 @@ div[class*="lineClamp2Plus"] {
     content: url("https://vendicated.github.io/random-files/pleading_face.svg");
 }
 
+.vc-addon-card .checked-16gMAN {
+    background-color: rgb(var(--accentcolor)) !important;
+}
+
 /* wordmark */
 .wordmarkWindows-2dq6rw svg {
     display: none;
@@ -185,23 +181,13 @@ svg.artwork-L5TAwQ {
     visibility: hidden !important;
 }
 
-/* better user panel */
-[class*=accountProfilePopoutWrapper-]>div>div>[class*=bannerSVGWrapper-],
-[class*=accountProfilePopoutWrapper-]>div>div>[class*=avatarWrapper-],
-[class*=accountProfilePopoutWrapper-]>div>div>[class*=profileBadges-],
-[class*=accountProfilePopoutWrapper-]>div>div>[class*=userPopoutOverlayBackground-]>[class*=divider-],
-[class*=accountProfilePopoutWrapper-]>div>div>[class*=userPopoutOverlayBackground-]>[class*=section-],
-[class*=accountProfilePopoutWrapper-]>div>div>[class*=userPopoutOverlayBackground-]>[class*=scroller-] {
-    display: none;
-}
-
 /* move user panel in server list*/
 .guilds-2JjMmN .tree-3agP2X {
     outline: none !important;
 }
 
 .guilds-2JjMmN .scroller-3X7KbA {
-    margin-bottom: calc(100% + 205px);
+    margin-bottom: calc(100% + 95px);
 }
 
 .guilds-2JjMmN .unreadMentionsIndicatorBottom-3RJMnQ {
@@ -212,8 +198,8 @@ svg.artwork-L5TAwQ {
     background: transparent;
     position: fixed;
     top: 18px;
-    right: 10px;
-    flex-direction: row-;
+    right: 0px;
+    flex-direction: row;
     padding: 0;
     width: var(105px, 72px);
     height: auto;
@@ -227,8 +213,8 @@ svg.artwork-L5TAwQ {
 
 .panels-3wFtMD>.container-YkUktl>[style="flex: 0 1 auto;"] .button-12Fmur {
     width: 100%;
-    border-radius: 0;
-    padding: 12px 6px 0;
+    border-radius: 5px;
+    padding: 12px 6px 0px;
     height: auto;
 }
 
@@ -238,7 +224,6 @@ svg.artwork-L5TAwQ {
 }
 
 .panels-3wFtMD>.container-YkUktl .avatarWrapper-1B9FTW {
-    margin-right: 0;
     margin-top: 12px;
 }
 
@@ -246,7 +231,7 @@ svg.artwork-L5TAwQ {
     width: calc(var(--HSL-server-icon-size) + 10px);
     height: calc(var(--HSL-server-icon-size) + 10px);
     transform: translate(1px, 1px);
-    left: -115px;
+    left: -5px;
 }
 
 .panels-3wFtMD>.container-YkUktl .avatar-1EWyVD {
@@ -255,6 +240,7 @@ svg.artwork-L5TAwQ {
 }
 
 .nameTag-sc-gpq {
+    display: none;
     position: absolute;
     left: -80px;
     width: 105px;
@@ -280,6 +266,24 @@ svg.artwork-L5TAwQ {
 /* replace x with twitter in connections */
 .connectedAccountIcon-3FdW8x[aria-label="X"] {
     content: url("https://shie100.github.io/random-files/bird.svg");
+}
+
+/* forum tweaks */
+.scrollerInner-2PPAp2 {
+    overflow: unset;
+}
+
+.reactButtons-FRvFhI {
+    overflow-x: scroll;
+}
+
+.reactButtons-FRvFhI .reactions-3HFE-S {
+    flex-wrap: nowrap;
+}
+
+.container-3wLKDe {
+    min-width: calc(100% - 70px);
+    max-width: calc(100% - 70px);
 }
 
 /* better modals from dablulite */
