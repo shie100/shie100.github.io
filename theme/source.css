@@ -37,6 +37,8 @@
     width: var(--member-list-width);
     min-width: var(--member-list-width);
     transition: ease-in-out var(--member-list-transition);
+    height: calc(100% - 53px);
+    border-radius: 15px 0 0 15px;
     z-index: 1;
 }
 
@@ -77,15 +79,15 @@
     box-shadow: none;
 }
 
-.chatContent-3KubbW {
+/*.chatContent-3KubbW {
     min-width: calc(100% - 70px);
     max-width: calc(100% - 70px);
 }
-
+    might uncomment this later
 .chatContent-3KubbW[aria-label=" (channel)"] {
     min-width: 100%;
     max-width: 100%;
-}
+}*/
 
 /*  show full bio thing */
 div[class*="lineClamp2Plus"] {
