@@ -123,6 +123,55 @@ div[class*="lineClamp2Plus"] {
     box-sizing: border-box;
 }
 
+/* jump to present */
+.jumpToPresentBar-1cEnH0 {
+    display: contents
+}
+
+.jumpToPresentBar-1cEnH0>button:first-child {
+    display: none;
+}
+
+.jumpToPresentBar-1cEnH0>button:last-child {
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 77px;
+    padding: 8px;
+    height: auto;
+    background-color: #3b3b3b20;
+    box-shadow: var(--elevation-high);
+    border-radius: 100px;
+    display: flex;
+    font-size: 0;
+    color: transparent;
+    transition: font-size .2s .1s, color .2s, padding .4s .1s;
+}
+
+.jumpToPresentBar-1cEnH0>button svg {
+    order: -1;
+    margin: 0px;
+    height: 24px;
+    width: 24px;
+    top: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    color: #FFFFFF;
+    transition: margin .6s;
+}
+
+.jumpToPresentBar-1cEnH0:hover>button {
+    padding: 8px 18px !important;
+    font-size: 14px;
+    color: #FFFFFF;
+    transition: font-size .2s, color .2s .1s, padding .4s;
+}
+
+.jumpToPresentBar-1cEnH0:hover>button svg {
+    margin-right: 2px;
+    margin-left: -6px;
+}
+
 .scrollableContainer-15eg7h {
     border-radius: 0px;
     min-height: 53px;
