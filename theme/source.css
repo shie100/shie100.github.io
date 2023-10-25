@@ -29,26 +29,18 @@
   --backgroundfloating: 47, 50, 61;   /*23, 24, 24;*/
 }
 
-/* ----- scroller color -----
- */
-:is(.scroller-kQBbkU,
-  .auto-2K3UW5,
-  .thin-RnSY0a,
-  .peopleColumn-1wMU14,
-  .contentRegionScroller-2_GT_N,
-  .scrollerBase-1Pkza4)::-webkit-scrollbar-thumb {
+/* ----- scroller color ----- */
+:is(.scroller__4b984,
+  .auto_a48086,
+  .thin_b1c063,
+  .peopleColumn__51df3,
+  .contentRegionScroller-2_GT_N, 
+  .scrollerBase_dc3aa9)::-webkit-scrollbar-thumb {
   background-color: rgb(var(--accentcolor));
 }
 
-/* hide things */
-[class^="threadSuggestionBar"],
-.newMessagesBar-1hF-9G,
-.unreadMentionsBar-ZXXoOH {
-  display: none !important
-}
-
 /* replace x with twitter in connections */
-.connectedAccountIcon-3FdW8x[aria-label="X"] {
+.connectedAccountIcon__6bc30[aria-label="X"] {
   content: url("https://shie100.github.io/random-files/bird.svg");
 }
 
@@ -58,8 +50,13 @@ div[class*="lineClamp2Plus"] {
 }
 
 /* sticky forum header */
-.scrollerInner-2PPAp2 {
+.scrollerInner__059a5 {
   overflow: unset;
+}
+
+.card__691f2 {
+  min-width: calc(100% - 64px);
+  max-width: calc(100% - 64px);
 }
 
 /* old pleading and hold back tear emoji */
@@ -71,11 +68,17 @@ div[class*="lineClamp2Plus"] {
   content: url("https://vendicated.github.io/random-files/pleading_face.svg");
 }
 
+/* FIX THIS NOW */
+.userPopoutOverlayBackground_d8afa4 {
+  max-height: 60vh;
+}
+
 /* remove library & nitro in dm*/
-.privateChannels-oVe7HL [href="/store"],
-[href="/library"] {
+.privateChannels__93473 [href="/store"],
+[href="/library"], [href="/shop"] {
     display: none;
 }
+
 
 /* dashless channel names */
 @font-face {
@@ -98,121 +101,86 @@ div[class*="lineClamp2Plus"] {
     font-family: "Dashless", var(--font-primary);
 }
 
-/* remove login artwork */
-svg.artwork-L5TAwQ {
-  display: none !important;
-  visibility: hidden !important;
+/* ----- consistent bottom bar ----- */
+.form__13a2c {
+  padding: 0;
 }
 
-/* ----- Aligned Chatbox -----
-  Squares up chatbox with user control area */
-/* align edges of chatbox to sides */
-:is(main, section)[class^=chatContent]>form {
-  padding: 0px;
+.channelTextArea__2e60f {
+  margin: 0;
 }
 
-/* align chatbox to bottom */
-:is(main, section)[class^=chatContent]>form>*:first-child {
-  margin-bottom: 0px;
-}
-
-/* center chatbox contents, no border radius */
-:is(main, section)[class^=chatContent]>form>*:first-child>* {
+.scrollableContainer__33e06 {
+  border-radius: 0;
   padding-top: 4px;
-  min-height: 49px;
-  border-radius: 0px;
+  min-height: 48px;
 }
 
-/* slowmode/typing indicator */
-:is(main, section)[class^=chatContent]>form>*:last-child[class^=typing] {
+/* Move typing indicators */
+.typing__6fd1d {
   top: -24px;
-  right: 0px;
-  margin-left: auto;
+  left: 0px;
   width: fit-content;
-  padding-left: 2px;
   padding-right: 9px;
-  border-top-left-radius: 8px;
-  background-color: var(--channeltextarea-background);
+  border-radius: 0 8px 0 0;
+  background: var(--bg-overlay-3,var(--channeltextarea-background));
 }
 
-/* Fix replies */
-main[class^=chatContent]>form>*>[class^=attachedBars] {
-  min-height: unset !important;
-  padding-bottom: 4px;
+/* Remove single pixel margin from user container */
+.container_ca50b9 {
+  margin: 0;
 }
 
-/* jump to present */
-[class^=jumpToPresentBar] {
-  left: 0;
-  border-radius: 0px;
-  border-top-right-radius: 8px;
-  opacity: 1;
-  background-color: var(--channeltextarea-background);
-  right: unset;
-}
-
-[class^=jumpToPresentBar]>[class^=barButtonMain] {
-  flex: 0 0 auto;
-  display: none;
-}
-
-/* FIX THIS NOW */
-.userPopoutOverlayBackground-3A0Pcz {
-  max-height: 60vh;
-}
-
-
-/*  ----- minified members and search-----
- */
-.container-2vWgD2 {
+/*  ----- minified members and search----- */
+.container_b2ce9c {
   width: 0%;
 }
 
-.members-2y1nVj,
-.membersWrap-3GwLFp,
-.searchResultsWrap-5RVOkx {
+.members__9f47b,
+.membersWrap__90226,
+.searchResultsWrap__9f374 {
   width: 64px;
   min-width: 64px;
   z-index: 1;
   transition: 0.3s ease-in;
 }
 
-.membersGroup-2YoqY- {
+.membersGroup__85843 {
   opacity: 0;
   padding: 0;
   height: 0;
   transition: 0.1s ease-out;
 }
 
-.membersWrap-3GwLFp:hover .membersGroup-2YoqY- {
+.membersWrap__90226:hover .membersGroup__85843 {
   opacity: 100%;
   height: 40px;
   padding: 24px 8px 0 16px;
   transition: 0.1s ease-in ;
 }
 
-.members-2y1nVj:hover,
-.membersWrap-3GwLFp:hover {
+.members__9f47b:hover,
+.membersWrap__90226:hover {
   width: 240px;
 }
 
-.searchResultsWrap-5RVOkx:hover {
+.searchResultsWrap__9f374:hover {
   width: 420px;
 }
 
-.searchResultGroup-1lU_-i {
+.searchResultGroup__35ba9 {
   width: 390px;
 }
 
-.membersWrap-3GwLFp,
-.searchResultsWrap-5RVOkx {
+.membersWrap__90226,
+.searchResultsWrap__9f374 {
   position: absolute;
   right: 0;
   height: 100%;
   box-shadow: none;
 }
 
-.chatContent-2O4SXb {
+.chatContent__5dca8 {
   min-width: calc(100% - 64px);
   max-width: calc(100% - 64px);
 }
