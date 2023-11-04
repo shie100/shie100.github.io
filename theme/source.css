@@ -34,7 +34,7 @@
   .auto_a48086,
   .thin_b1c063,
   .peopleColumn__51df3,
-  .contentRegionScroller-2_GT_N, 
+  .contentRegionScroller__86c79, 
   .scrollerBase_dc3aa9)::-webkit-scrollbar-thumb {
   background-color: rgb(var(--accentcolor));
 }
@@ -180,7 +180,12 @@ div[class*="lineClamp2Plus"] {
   box-shadow: none;
 }
 
-.chatContent__5dca8 {
+.chatContent__5dca8{
   min-width: calc(100% - 64px);
   max-width: calc(100% - 64px);
+}
+
+.chatContent__5dca8[aria-label=" (channel)"]{
+  min-width: 100%;
+  max-width: 100%;
 }
