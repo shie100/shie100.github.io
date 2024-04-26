@@ -1,0 +1,28 @@
+.form_d8a4a1 {
+    padding: 0;
+}
+
+.channelTextArea_c2094b {
+    margin: 0;
+}
+
+.scrollableContainer_ff917f {
+    border-radius: 0;
+    padding-top: 4px;
+    min-height: 48px;
+}
+
+/* Move typing indicators */
+.typing__6fd1d {
+    top: -24px;
+    left: 0px;
+    width: fit-content;
+    padding-right: 9px;
+    border-radius: 0 8px 0 0;
+    background: var(--bg-overlay-3, var(--channeltextarea-background));
+}
+
+/* Remove single pixel margin from user container */
+.container_debb33 {
+    margin: 0;
+}
