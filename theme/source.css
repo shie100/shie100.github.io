@@ -18,3 +18,11 @@
     --settingsicon: 1;
 }
 
+[class^="descriptionClamp_"] {
+    max-height: max-content;
+    -webkit-box-orient: unset;
+}
+
+[class^="viewFullBio_"] {
+    display: none;
+}
