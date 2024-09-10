@@ -1,10 +1,10 @@
-[class*=header_]:has(+[class*=premiumTab_]),
+/*[class*=header_]:has(+[class*=premiumTab_]),
 [class*=premiumTab_],
 [class*=premiumTab_]+[class*=item_],
 [aria-label="Subscriptions"],
 [aria-label="Gift Inventory"],
 [aria-label="Gift Inventory"]+[class*=item_],
-[aria-label="Gift Inventory"]+[class*=item_]+[class*=separator_],
+[aria-label="Gift Inventory"]+[class*=item_]+[class*=separator_],*/
 
 [href="/store"],
 [href="/shop"],
@@ -96,6 +96,7 @@
     display: none;
 }
 
+
 /* recent activty */
 [class^='membersGroup']:has([role=button]),
 [class^='member'] [class^='container']:has([class*='badges']) {
@@ -108,5 +109,4 @@
 
 [class^=channelAppLauncher_] {
     display: none;
- }
- 
+}
