@@ -11,11 +11,22 @@
 @import url("stuff/hide_stuff.css");
 @import url("stuff/minified-member-bar.css");
 @import url("stuff/scrollbar.css");
+@import url("stuff/user-gradient.css");
 @import url("stuff/x-to-twitter.css");
 @import url("https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css");
+@import url("https://raw.githubusercontent.com/DiscordStyles/HorizontalServerList/deploy/HorizontalServerList.theme.css");
+@import url("https://raw.githubusercontent.com/Andrew6rant/Discord-plugins-and-themes/refs/heads/main/BetterMessageButtonsAlternate.theme.css");
 
 :root {
     --settingsicon: 1;
+
+    --msg-solo-button-width: 36px;
+    --msg-grid-button-padding: 32px;
+    --msg-grid-columns: 2;
+    --msg-button-height: 64px;
+    --msg-button-border-radius: 8px;
+    --msg-section-spacing: 12px;
+    --msg-offset-Y: 36px;
 }
 
 [class^="descriptionClamp_"] {
