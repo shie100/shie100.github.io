@@ -1,4 +1,4 @@
 /* replace x with twitter in connections */
-.connectedAccountIcon_f3eb60[aria-label="X"] {
+[class^="connectedAccountIcon_"][aria-label="X"] {
     content: url("https://shie100.github.io/random-files/bird.svg");
 }

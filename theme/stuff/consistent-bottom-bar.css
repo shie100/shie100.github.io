@@ -1,19 +1,21 @@
-.form_a7d72e {
-    padding: 0;
+[class^="form_"] {
+    padding: 0px;
+    border: 0px;
+    border-top: 1px solid var(--border-subtle);
 }
 
-.channelTextArea_a7d72e {
-    margin: 0;
+[class^="channelTextArea_"] {
+    margin: 0px;
 }
 
-.scrollableContainer_d0696b {
+[class^="scrollableContainer_"] {
     border-radius: 0;
     padding-top: 4px;
     min-height: 48px;
 }
 
 /* Move typing indicators */
-.typing_d7ebeb {
+[class^="typing_"] {
     top: -24px;
     left: 0px;
     width: fit-content;
@@ -24,5 +26,19 @@
 
 /* Remove single pixel margin from user container */
 .container_b2ca13 {
-    margin: 0;
+    margin: -1px;
+    border: 0px;
+    border-top: 1px solid var(--border-subtle);
+}
+
+[class^=channelAppLauncher_] {
+    display: none;
+}
+
+[class*=unreadMentionsFixedFooter_] {
+    bottom: 0px !important;
+}
+
+[class^=footer_]:has([class*=fixedDiscoveryIcon_]) {
+    display: none;
 }

@@ -106,7 +106,3 @@
 [class*="biteSize_"] :is([aria-label="Add Friend"], [aria-label="Friends"]) {
     display: none;
 }
-
-[class^=channelAppLauncher_] {
-    display: none;
-}
