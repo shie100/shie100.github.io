@@ -2,11 +2,11 @@
     --accentcolor: 130, 104, 179;
 }
 
-:is(.scroller_e2e187,
-    .auto_eed6a8,
-    .thin_eed6a8,
-    .peopleColumn_c2739c,
-    .contentRegionScroller_c25c6d,
-    .scrollerBase_c49869)::-webkit-scrollbar-thumb {
+:is(.scroller__36d07,
+    .auto__99f8c,
+    .thin__99f8c,
+    .peopleColumn__133bf,
+    .contentRegionScroller__23e6b,
+    .scrollerBase_d125d2)::-webkit-scrollbar-thumb {
     background-color: rgb(var(--accentcolor));
 }
