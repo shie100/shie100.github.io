@@ -1,0 +1,30 @@
+/**
+ * @name a theme for visual refresh
+ * @author bitmoji
+ * @version 1
+ * @description use with legacy chatbar 
+*/
+
+@import url('modules/better_jumpto.css');
+@import url('modules/consistent_bottom_bar.css');
+@import url('modules/hide_stuff.css');
+@import url('modules/minified_member_list.css');
+@import url('modules/old_userpanel.css');
+@import url('modules/scrollbar.css');
+@import url('modules/x_to_twitter.css');
+@import url('https://raw.githubusercontent.com/nin0-dev/vencord-css/refs/heads/master/visual-refresh-spotify-controls.css');
+
+:root {
+    --accentcolor: 130, 104, 179;
+}
+
+[class^="descriptionClamp_"] {
+    max-height: max-content;
+    -webkit-box-orient: unset;
+}
+
+[class^="viewFullBio_"] {
+    display: none;
+}
+
+

@@ -1,0 +1,8 @@
+:is([class^='scroller__'],
+    [class^='auto__'],
+    [class^='thin__'],
+    [class^='peopleColumn__'],
+    [class^='contentRegionScroller__'],
+    [class^='scrollerBase_'])::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--accentcolor));
+}

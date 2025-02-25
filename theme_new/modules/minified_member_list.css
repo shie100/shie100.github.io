@@ -1,0 +1,79 @@
+.container_c8ffbb {
+    width: 0%;
+}
+
+.members_c8ffbb,
+.membersWrap_c8ffbb,
+.searchResultsWrap_a9e706 {
+    width: 64px;
+    min-width: 64px;
+    z-index: 1;
+    transition: 0.3s ease-in;
+    border-left: 1px solid var(--border-subtle);
+}
+
+.membersGroup_c8ffbb {
+    opacity: 0;
+    padding: 0;
+    height: 0;
+    transition: 0.1s ease-out;
+}
+
+.membersWrap_c8ffbb:hover .membersGroup_c8ffbb {
+    opacity: 100%;
+    height: 40px;
+    padding: 24px 8px 0 16px;
+    transition: 0.1s ease-in;
+}
+
+.members_c8ffbb:hover,
+.membersWrap_c8ffbb:hover {
+    width: 240px;
+}
+
+.searchResultsWrap_a9e706:hover {
+    width: 420px;
+}
+
+.searchResultGroup_c68065 {
+    width: 390px;
+}
+
+.membersWrap_c8ffbb,
+.searchResultsWrap_a9e706 {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    box-shadow: none;
+}
+
+.chatContent_f75fb0 {
+    min-width: calc(100% - 64px);
+    max-width: calc(100% - 64px);
+}
+
+.chatContent_f75fb0[aria-label=" (channel)"] {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+/* visual refresh fixes */
+/* re-edging the corner padding to match pre-refresh */
+.visual-refresh [class^=appAsidePanelWrapper] {
+    padding: 1px;
+}
+
+/* Make profile & derivatives stop hogging the entire bottom left corner*/
+.visual-refresh [class^=panels_] {
+    bottom: 4px;
+    left: 80px;
+    width: calc(100% - 84px);
+    border-right: 0px;
+}
+
+/* Fix the dead space padding on the server and channel list */
+.visual-refresh [class^=wrapper_],
+.visual-refresh .container_ee69e0 {
+    padding-bottom: unset;
+    --custom-app-panels-height: 16px
+}
