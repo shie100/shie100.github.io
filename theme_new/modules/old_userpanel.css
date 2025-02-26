@@ -3,7 +3,9 @@
     left: 72px;
     width: calc(100% - 72px);
     border-radius: 0px;
-    background-color: var(--background-secondary);
+    border-right: 1px solid var(--border-subtle);
+    border-left: 1px solid var(--border-subtle);
+    background-color: var(--background-primary);
 
     >[class^="container_"] {
         padding: 0px;
@@ -14,4 +16,9 @@
 
 .visual-refresh [class^="sidebar_"]>[class*="guilds_"] {
     margin-bottom: 0px;
+}
+
+.visual-refresh .panel__5dec7 {
+    border-radius: 0px;
+    background-color: var(--background-primary);
 }

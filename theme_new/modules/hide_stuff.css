@@ -1,10 +1,10 @@
-/*[class*=header_]:has(+[class*=premiumTab_]),
+[class*=header_]:has(+[class*=premiumTab_]),
 [class*=premiumTab_],
 [class*=premiumTab_]+[class*=item_],
 [aria-label="Subscriptions"],
 [aria-label="Gift Inventory"],
 [aria-label="Gift Inventory"]+[class*=item_],
-[aria-label="Gift Inventory"]+[class*=item_]+[class*=separator_],*/
+[aria-label="Gift Inventory"]+[class*=item_]+[class*=separator_],
 
 [href="/store"],
 [href="/shop"],
@@ -96,36 +96,43 @@
     display: none;
 }
 
-
 /* recent activty */
 [class^='membersGroup']:has([role=button]),
 [class^='member'] [class^='container']:has([class*='badges']) {
-    display: none;
+  display: none;
 }
 
 /* hide friend button in small user profile */
 [class*="biteSize_"] :is([aria-label="Add Friend"], [aria-label="Friend"]) {
-    display: none;
+  display: none;
 }
 
 /* hide big discord nitro thing noone gaf about */
-[class^="tooltipContainer_"]:has([class^="tooltipWordmarkContainer_"]) {
-    padding: initial;
+[class^="tooltipWordmarkContainer_"] {
+  display: none;
+  padding: 0;
+}
 
-    & img,
-    h1,
-    h2,
-    [class^="tooltipWordmarkContainer_"] {
-        display: none;
-    }
+[class^="tooltipContainer_"]>img {
+  display: none;
+}
 
-    & [class*="tooltipDescription_"] {
-        color: inherit !important;
-        font: inherit;
-        margin: inherit;
-    }
+[class^="tooltipContainer_"]>h1 {
+  display: none;
+  padding: 0;
+}
+
+[class^="tooltipContainer_"] {
+  padding: 0;
+  margin: 0 auto;
+}
+
+[class^="tooltipDescription_"] {
+  color: white !important;
+  font-size: 14px;
+  padding: 0;
 }
 
 [class^="channelAppLauncher_"] {
-    display: none !important;
+  display: none !important;
 }
