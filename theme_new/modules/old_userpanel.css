@@ -3,7 +3,6 @@
     left: 72px;
     width: calc(100% - 72px);
     border-radius: 0px;
-    border-right: 1px solid var(--border-subtle);
     border-left: 1px solid var(--border-subtle);
     background-color: var(--background-primary);
 
