@@ -11,7 +11,6 @@
     margin: 0;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    border-top: 1px solid var(--border-subtle);
 }
 #vc-spotify-titles div:last-child {
     display: var(--album-name);
