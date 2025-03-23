@@ -1,16 +1,13 @@
-[class*="AppLauncher"] {
-    display: none !important;
-}
-
 .visual-refresh [class^="form_"], [class^="formWithLoadedChatInput_"] {
     margin-left: -9px;
     margin-right: -9px;
-    margin-bottom: -7px;
+    margin-bottom: -9px;
     border-radius: 0;
 }
 
 .visual-refresh [class^="channelTextArea_"] {
     border-radius: 0;
+    border-top: 1px solid var(--border-subtle);
 }
 
 .visual-refresh [class^="textArea__"] {
@@ -31,4 +28,3 @@
         transition: 200ms linear 50ms;
     }
 }
-
