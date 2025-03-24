@@ -1,7 +1,7 @@
 .visual-refresh [class^="form_"], [class^="formWithLoadedChatInput_"] {
     margin-left: -9px;
     margin-right: -9px;
-    margin-bottom: -9px;
+    margin-bottom: -8px;
     border-radius: 0;
 }
 
