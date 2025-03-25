@@ -1,11 +1,11 @@
 .visual-refresh [class^="panels_"] {
     bottom: 0px;
-    left: 72px;
-    width: calc(100% - 72px);
+    left: 65px;
+    width: calc(100% - 65px);
     border-radius: 0px;
-    border-left: 1px solid var(--border-subtle);
     background-color: var(--background-primary);
-
+    border: 0;
+    border-top: 1px solid var(--border-subtle);
     >[class^="container_"] {
         padding: 0px;
         margin: 0 8px;
