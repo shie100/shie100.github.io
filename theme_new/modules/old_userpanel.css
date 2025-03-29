@@ -1,7 +1,7 @@
 .visual-refresh [class^="panels_"] {
     bottom: 0px;
-    left: 65px;
-    width: calc(100% - 65px);
+    left: 72px;
+    width: calc(100% - 72px);
     border-radius: 0px;
     background-color: var(--background-primary);
     border: 0;
