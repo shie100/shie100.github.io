@@ -31,7 +31,7 @@
      border-radius: 0 8px 0 0;
      color: #fff !important;
      font-size: 12px !important;
-     background: var(--bg-overlay-3, var(--channeltextarea-background));
+     background: var(--bg-overlay-floating, var(--chat-background-default)) 
  }
  
  .visual-refresh [class*=unreadMentionsFixedFooter_] {
