@@ -132,7 +132,3 @@
   font-size: 14px;
   padding: 0;
 }
-
-[class^="channelAppLauncher_"] {
-  display: none !important;
-}
