@@ -1,27 +1,52 @@
 /**
  * @name a theme for visual refresh
  * @author bitmoji
- * @version 1.22
+ * @version 1.23
  * @description hi
 */
 
-@import url('modules/consistent_bottom_bar.css');
-@import url('modules/hide_stuff.css');
-@import url('modules/minified_member_list.css');
-@import url('modules/scrollbar.css');
+@import url('https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/UserActivityRedesign/import.css');
+@import url('https://raw.githubusercontent.com/Ragnar-es/css-snippets/refs/heads/main/Compact-Spotify-Player/theme.css');
+@import url('https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-memberlist.css');
+@import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactButtons.css');
+@import url('https://blade04208.github.io/css/bettershiki.css');
 @import url('modules/x_to_twitter.css');
-@import url('modules/hide_stuff.css');
 
 :root {
     --accentcolor: 130, 104, 179;
     --album-name: flex;
+
+    --spotify-image-blur: 3px;
+    --spotify-image-opacity: 1;
+    --spotify-image-hover-opacity: 1;
 }
 
-[class^="descriptionClamp_"] {
+[class^="f5f93a5c4078d63c-descriptionClamp"] {
     max-height: max-content;
     -webkit-box-orient: unset;
 }
 
-[class^="viewFullBio_"] {
-    display: none;
+[class^="f5f93a5c4078d63c-viewFullBio"] {
+    display:none;
+}
+
+.vc-shiki-btn::after {
+  top: -3px !important;
+  left: -7px !important;
+  content: "😭" !important; /* or any other symbol you want */
+  font-size: 16px !important;
+}
+
+#vc-spotify-album-image:hover {
+    filter: brightness(1);
+    cursor: pointer;
+}
+
+#vc-spotify-player {
+    padding-bottom: 9px;
+    background: color-mix(in srgb, var(--panel-color) 40%, transparent) !important;
+}
+
+#vc-spotify-player:hover::after {
+    backdrop-filter: blur(3px) !important;
 }
