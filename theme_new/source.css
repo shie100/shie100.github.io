@@ -7,27 +7,17 @@
 
 @import url('https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/UserActivityRedesign/import.css');
 @import url('https://raw.githubusercontent.com/Ragnar-es/css-snippets/refs/heads/main/Compact-Spotify-Player/theme.css');
-@import url('https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-memberlist.css');
 @import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactButtons.css');
 @import url('https://blade04208.github.io/css/bettershiki.css');
 @import url('modules/x_to_twitter.css');
+@import url('modules/minified_member_list');
 
 :root {
     --accentcolor: 130, 104, 179;
-    --album-name: flex;
-
-    --spotify-image-blur: 3px;
-    --spotify-image-opacity: 1;
-    --spotify-image-hover-opacity: 1;
-}
-
-[class^="f5f93a5c4078d63c-descriptionClamp"] {
-    max-height: max-content;
-    -webkit-box-orient: unset;
-}
-
-[class^="f5f93a5c4078d63c-viewFullBio"] {
-    display:none;
+    --compact-member-list-transition-definition: 0.3s;
+    --spotify-image-blur: 3px !important;
+    --spotify-image-opacity: 1 !important;
+    --spotify-image-hover-opacity: 1 !important;
 }
 
 .vc-shiki-btn::after {
@@ -50,3 +40,13 @@
 #vc-spotify-player:hover::after {
     backdrop-filter: blur(3px) !important;
 }
+
+[class^="f5f93a5c4078d63c-descriptionClamp"] {
+    max-height: max-content;
+    -webkit-box-orient: unset;
+}
+
+[class^="f5f93a5c4078d63c-viewFullBio"] {
+    display:none;
+}
+
