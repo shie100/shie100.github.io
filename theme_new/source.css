@@ -10,7 +10,7 @@
 @import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactButtons.css');
 @import url('https://blade04208.github.io/css/bettershiki.css');
 @import url('modules/x_to_twitter.css');
-@import url('modules/minified_member_list');
+@import url('modules/minified_member_list.css');
 
 :root {
     --accentcolor: 130, 104, 179;
