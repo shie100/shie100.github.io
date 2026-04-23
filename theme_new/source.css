@@ -41,12 +41,11 @@
     backdrop-filter: blur(3px) !important;
 }
 
-[class^="f5f93a5c4078d63c-descriptionClamp"] {
+[class^="descriptionClamp_f5f93a"] {
     max-height: max-content;
     -webkit-box-orient: unset;
 }
 
-[class^="f5f93a5c4078d63c-viewFullBio"] {
+[class^="viewFullBio_f5f93a"] {
     display:none;
 }
-
