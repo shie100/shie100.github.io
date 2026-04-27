@@ -91,10 +91,10 @@
 }
 
 /*[class*=avatarDecoration_],
-[class*=premiumIconWrapper_], */
+[class*=premiumIconWrapper_],
 [class*=profileEffects_] {
     display: none;
-}
+} */
 
 /* recent activty */
 [class^='membersGroup']:has([role=button]),
@@ -105,30 +105,4 @@
 /* hide friend button in small user profile */
 [class*="biteSize_"] :is([aria-label="Add Friend"], [aria-label="Friend"]) {
   display: none;
-}
-
-/* hide big discord nitro thing noone gaf about */
-[class^="tooltipWordmarkContainer_"] {
-  display: none;
-  padding: 0;
-}
-
-[class^="tooltipContainer_"]>img {
-  display: none;
-}
-
-[class^="tooltipContainer_"]>h1 {
-  display: none;
-  padding: 0;
-}
-
-[class^="tooltipContainer_"] {
-  padding: 0;
-  margin: 0 auto;
-}
-
-[class^="tooltipDescription_"] {
-  color: white !important;
-  font-size: 14px;
-  padding: 0;
 }
